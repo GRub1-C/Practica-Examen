@@ -1,0 +1,51 @@
+ * {
+    color: violet;
+ }
+
+ h1, dd {
+    color: blue;
+ }
+
+#tipo {
+    background-color: violet ;
+    color:black;
+}
+
+.por-clase {
+    background-color: tomato ;
+    color: black;
+    outline: 5px solid blue;
+}
+
+p.verde {
+    background-color: blue;
+    color:white;
+    outline: 3px solid lime;
+}
+
+h1.importante {
+    background-color: black; 
+    color: tomato;
+    outline: 3px solid yellow;
+}
+
+/* DESCENDITENES */
+
+div h3 {
+    background-color: black;
+    color: yellow;
+}
+
+div > p {
+    background-color: black;
+    color: lime;
+}
+
+p.sis ~ p {
+    background-color: black;
+    color: palevioletred;
+} 
+
+h5:hover{
+    background-color: violet;
+}

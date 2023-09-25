@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Atributo Lang -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Fase 1</title>
 </head>
 <body>
-    
+    <h1 class="titulo" tabindex="1"> HOLA PROBANDO PROBANDO 1 2 3</h1>
+    <h2 hidden > Estoy usando todo lo posible</h2>
+    <h2  > Esto lo puse 2 veces pero uno esta oculto por hidden :D</h2>
+    <p tabindex="2"> <mark> Da 2 tab y llegas aqui, fue por el atributo tabindex </mark></p>
+    <h3> Buenos dias </h3>
+    <p style="font-family: 'Courier New', Courier, monospace;"> Lorem ipsum dolor sit amet consectetur.</p>
+    <blockquote cite="https://www.educaciontrespuntocero.com/recursos/frases-motivacionales">
+        <p> Para usar la etiqueta blachquote, esta la siguiente frase: Siempre se puede, cuando se quiere </p>
+        <cite>José Luis Sampedro</cite>
+
+    </blockquote>
+
+    <p>Lorem ipsum, blo <a href="www.facebook.com"> Pablo Livas <a/> sit amet consectetur adipisicing elit. Facere aliquid quos sed <abbr title="Universidad"> UANL</abbr> est laudantium libero ad quidem voluptatem hic, illo amet magni. <b>Negrita con b</b>Facere <i>Cursica con i </i>velit similique autem fugiat, ipsam beatae eveniet. <strong>Negrita con strong</strong>, odit, sit totam sint animi atque <em>Texto enfatizado con em</em> labore id dolore inventore cumque doloribus molestias impedit <cite> Holaaa, querido autor que cite</cite> soluta quas maxime fugit rem <mark> Marcatexto con mark</mark> amet, quo sapiente. Quo nulla cum. Lorem ipsum dolor sit amet consectetur <small> Marcar comentarioscon small</small> elit. Omnis consequatur architecto sequi, illum error <span> Estilo de texto con span que es generico</span> doloremque aliquam esse quis nihil dicta iure animi atque quae <time> valor de tiempo con time</time> et earum non beatae id eius nesciunt dolor qui accusamus quod. br  <br> Laboriosam vel iure vero ex autem, veniam repellat quia fuga atque quam eos.</p>
+    <hr>
+    <p> Ahora una lista de etiquetasdel HEAD</p>
+    <dl>
+        <dt> TITLE</dt>
+            <dd> Es el titulo</dd>
+        <dt> META </dt>
+            <dd> Lista de valores de metadatos</dd>
+        <dt> LINK </dt>
+            <dd> Acceso a recurso externos del documento</dd>
+        <dt> SCRIPT </dt>
+            <dd> Especifica el codigo de programacion </dd>
+        <dt> STYLE</dt>
+            <dd> Estilos del documento</dd>
+    </dl>
+    <hr>
+    <p>Ahora una lista ordenada</p>
+    <ol>
+        <li>UNO</li>
+        <li>DOS </li>
+        <li>TRES</li>
+    </ol>
+    <hr>
+    <p>Una lista Desordenada</p>
+    <ul>
+        <li>Gatos</li>
+        <li>Perros</li>
+        <li>Loros</li>
+        <li>Ardillas</li>
+    </ul>
+    <pre> Holaaaaa, HTML ignora los espacios    pero    si utilizo la etiqueta pre          
+        esto no se respeta :D
+    </pre>
+
+    <h2> Ahora mostrare una tabla de mi horario semananl</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>HORARIO</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIERCOLES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7am - 9am</td>
+                <td> Examen</td>
+                <td rowspan="2"> Trabajo</td>
+                <td> Examen</td>
+            </tr>
+            <tr>
+                <td>2pm - 8pm</td>
+                <td>Trabajo</td>
+                <td>Trabajo</td>
+            </tr>
+            <tr>
+                <td > 8pm - 10pm</td>
+                <td colspan="2">Camion</td>
+                <td>Casa</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>&copy;</td>
+            <td>Derechos </td>
+            <td colspan="2">&hearts;</td>
+        </tfoot>
+    </table>
+
+    <h1> FORMULARIOS CON HTML</h1>
+
+    <form action="" method="post">
+
+        <label for="nombre"> Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+    <div>
+        <label for="fecha"> Fecha Nacimiento </label>
+        <input type="date" name="fecha" id="fecha">
+    </div>
+
+    <div>
+        <label for="color"> Color Fav</label>
+        <input type="color" name="color" id="color">
+    </div>
+
+    <div>
+        <label for="contraseña"> Contraseña: </label>
+        <input type="password" name="contraseña" id="contraseña">
+    </div>
+
+    <div>
+        <label for="semestre"> Semestre: </label>
+        <input type="range" min="1" max="9" name="semestre" id="semestre">
+    </div>
+
+    <div>
+        <label for="comentarios"> Comentarios u Opiniones: </label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <label for="archivo"> Sube uno: </label>
+        <input type="file" name="archivo" id="archivo">
+    </div>
+
+    <div>
+        <label for="animales"> Animal Favorito</label>
+        <select name="animales" id="animales">
+            <option value="1"> perro</option>
+            <option value="2"> gato</option>
+            <optgroup label="marino">
+                <option value="2">Pez</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <label for="hermanos"> Cuantos hermanos tienes</label>
+        <select name="hermanos" id="hermanos" multiple>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+
+    <input type="button" value="Guardar">
+    <button> Enviar </button>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+    <a href="#">Enviar</a>
+    </form>
 </body>
 </html>
